@@ -26,7 +26,7 @@ function totalfunction() {
 
 
 function seventeenfunction() {
-    document.getElementById("button").innerHTML = "In 2017, the amount of people at risk of losing DACA is close to the amount of minutes in a year.";
+    document.getElementById("button").innerHTML = "In 2017, the amount of people who will lose DACA can be compared to nearly a quarter of the hippie community in the world";
     state = '2017'
     document.getElementById("subtitle").innerHTML = "2017"
 }
