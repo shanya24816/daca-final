@@ -102,7 +102,7 @@ function draw() {
                     fill("#48D1CC");
                 }
             }else if (state == "total") {
-                    fill("#808080");
+                    fill("#48D1CC");
             }
             ellipse(countX * radius + radius/2, countY * radius , radius, radius);
         }
