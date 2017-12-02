@@ -99,7 +99,7 @@ function draw() {
                 } else if (index > total2017 && index <= total2018) {
                     fill("#FF6A5C");
                 } else if (index > total2018) {
-                    fill("#81009A");
+                    fill("#808080");
                 }
             }else if (state == "total") {
                     fill("#E6E6FA");
