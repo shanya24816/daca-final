@@ -20,6 +20,7 @@ function carousel() {
 function totalfunction() {
     document.getElementById("button").innerHTML = "We have found statistics based on everyday actions and things that affect everyday people as a way of making these numbers more relatable. The meaning of this is to help with comparing the numbers and to see the severity of what Trump is doing.";
     state = 'total'
+    document.getElementById("subtitle").innerHTML = "Today"
 }
 
 
@@ -27,6 +28,7 @@ function totalfunction() {
 function seventeenfunction() {
     document.getElementById("button").innerHTML = "In 2017, the amount of people at risk of losing DACA is close to the amount of minutes in a year.";
     state = '2017'
+    document.getElementById("subtitle").innerHTML = "2017"
 }
 
 
@@ -34,6 +36,7 @@ function seventeenfunction() {
 function eightteenfunction() {
     document.getElementById("button").innerHTML = "In 2018, nearly half the number of people who eat McDonalds in a week will have lost DACA by 2018.";
     state = '2018'
+    document.getElementById("subtitle").innerHTML = "2018"
 }
 
 
@@ -41,7 +44,7 @@ function eightteenfunction() {
 function nineteenfunction() {
     document.getElementById("button").innerHTML = "In 2019, the amount of people who will lose DACA will be nine times the number of people killed in a motor vehicle crash.";
     state = '2019'
-
+    document.getElementById("subtitle").innerHTML = "2019"
 }
 
 var scaleValue = 1;
