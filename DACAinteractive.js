@@ -99,10 +99,10 @@ function draw() {
                 } else if (index > total2017 && index <= total2018) {
                     fill("#FF6A5C");
                 } else if (index > total2018) {
-                    fill("#808080");
+                    fill("#48D1CC");
                 }
             }else if (state == "total") {
-                    fill("#E6E6FA");
+                    fill("#808080");
             }
             ellipse(countX * radius + radius/2, countY * radius , radius, radius);
         }
