@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="DACAinteractive.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<title>
+		DACA Interactive
+	</title>
+	<style>
+		.slideshow {
+			display.none;
+		}
+	</style>
+</head>
+
+<body class="container-fluid" style="font-family: 'Oswald', sans-serif;">
+	<div class="row" style="background-color: #FF9B42;">
+
+		<div class="col">
+			<div class="d-flex justify-content-between bd-highlight mb-3">
+				<div class="p-2 bd-highlight"> <img id="firstimage" class="img-fluid pt-2" src="YR_logo.png"/>
+				</div>
+				<div class="p-4 bd-highlight text-center" id="daca">
+							<h1> How Many Will Be Lost</h1>
+
+							About 800,000 undocumented immigrants are enrolled in DACA, and more than 700,000 may end up losing their protected status after the Trump administration announced in September that it intended to end the program. New applications are no longer being
+							accepted. Existing DACA recipients were given until October 5, 2017 to renew their applications. According to the United States Citizenship and Immigration Services agency, they received about 132,000 applications for renewal
+				</div>
+				<div class="p-2 bd-highlight"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12 col-sm-12">
+			<div class="slideshow-container text-center">
+				<div class="mySlides fade ">
+					<div class="numbertext outofeleven">1 / 11</div>
+					<img src="new/daca1.png" class="img-fluid">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext outofeleven"> 2 / 11</div>
+					<img src="new/daca2.png" class="img-fluid">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext outofeleven"> 3 / 11</div>
+					<img src="new/daca3.png" class="img-fluid">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext outofeleven"> 4 / 11</div>
+					<img src="new/daca4.png" class="img-fluid">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext outofeleven"> 5 / 11</div>
+					<img src="new/daca5.png" class="img-fluid">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext outofeleven"> 6 / 11</div>
+					<img src="new/daca6.png" class="img-fluid">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext outofeleven"> 7 / 11</div>
+					<img src="new/daca7.png" class="img-fluid">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext outofeleven"> 8 / 11</div>
+					<img src="new/daca8.png" class="img-fluid">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext outofeleven"> 9 / 11</div>
+					<img src="new/daca9.png" class="img-fluid">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext outofeleven"> 10 / 11</div>
+					<img src="new/daca10.png" class="img-fluid">
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext outofeleven"> 11 / 11</div>
+					<img src="new/daca11.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-1 col-sm-1">
+		</div>
+		<div class="col-12 col-sm-10 question">
+			<div>
+				What is DACA?
+			</div>
+			<p>
+				DACA stand for Deferred Action for Childhood Arrivals. DACA gives undocumented immigrants the opportunity to get a social security card which would allows them to get driver's licenses, jobs and live normal lives without having to be worry about people
+				coming and deporting them.
+			</p>
+			<div>
+				Why is DACA important?
+			</div>
+			<p>
+				Why should we care? People who are and are not Dreamers should care that president Trump is getting rid of DACA because without DACA, a lot of the American community that is filled with Dreamers, who occupy important jobs and not only help with economic
+				growth but also a part of school communities and friend communities will be deported. Also, dreamers did not come to America on their own terms. Their parents brought them here. It is wrong for dreamers to get deported because they grew up in America
+				and know only American culture.
+			</p>
+		</div>
+	</div>
+	<br>
+	<div class=" row title">
+		<h1 class="col-12">
+			DACA Statistics
+			</h1>
+	</div>
+	<div class="row">
+		<div class="col-1 col-sm-1">
+		</div>
+		<div class="col-12 col-sm-10">
+			This graph shows the <span id="have"> the grand total of people, </span> <span id="lost"> the number of people who will have lose it in 2017,</span> <span id="other"> number of people who will lose it in 2018,</span> and the <span id=l19>number of people wil lose it in 2019</span>
+		</div>
+	</div>
+	<br>
+	<div>
+		<h1 class="title" onclick="subtitlefunction()">
+		2017
+		</h1>
+	</div>
+	<div class="row">
+		<div class="col-2 col-sm-2">
+		</div>
+		<div class="col-8 col-sm-8 text-center">
+			<div id="chart">
+			</div>
+		</div>
+		<div class="col-2 col-sm-2">
+		</div>
+	</div>
+
+	<!-- <div class="row mb-5">
+	<div class="col-12 col-sm-2">
+	</div>
+	<div class="col-12 col-sm-2 my-2">
+			<button type="button" class="btn year" onclick="todayfunction()"> Today </button>
+	</div>
+	<div class="col-12 col-sm-2 my-2" id="year">
+			<button type="button" class="btn year" onclick="seventeenfunction()"> 2017 </button>
+	</div>
+	<div class="col-12 col-sm-2 my-2">
+			<button type="button" class="btn year" onclick="eightteenfunction()"> 2018 </button>
+	</div>
+	<div class="col-12 col-sm-2 my-2">
+			<button type="button" class="btn year" onclick="nineteenfunction()"> 2019 </button>
+	</div>
+	<div class="col-12">
+	</div>
+</div> -->
+	<div class="row">
+		<div class="col-2 col-sm-2">
+		</div>
+		<div class="col-8 col-sm-8" id=people>
+			1 circle is 5,000 people.
+			<br>
+			<br> All of the circles are the total population of Dreamers which is about 700,000 people.
+		</div>
+	</div>
+	<div class="col-2 col-sm-2">
+	</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-2 col-sm-2">
+		</div>
+		<div class="col-12 col-sm-8" id="button">
+			We have found statistics based on everyday actions and things that affect everyday people as a way of making these numbers more relatable. The meaning of this is to help with comparing the numbers and to see the severity of what Trump is doing.
+		</div>
+		<div class="col-2 col-sm-2">
+		</div>
+	</div>
+	<br>
+	<div class="row mb-5">
+		<div class="col-12 col-sm-2">
+		</div>
+		<div class="col-12 col-sm-2 my-2">
+			<button type="button" class="btn year" onclick="totalfunction()"> Total </button>
+		</div>
+		<div class="col-12 col-sm-2 my-2" id="year">
+			<button type="button" class="btn year" onclick="seventeenfunction()"> 2017 </button>
+		</div>
+		<div class="col-12 col-sm-2 my-2">
+			<button type="button" class="btn year" onclick="eightteenfunction()"> 2018 </button>
+		</div>
+		<div class="col-12 col-sm-2 my-2">
+			<button type="button" class="btn year" onclick="nineteenfunction()"> 2019 </button>
+		</div>
+		<div class="col-12">
+		</div>
+	</div>
+	<br>
+	<br>
+	<div id="names">
+		<h3> Created By:</h3>
+		<h4> Shanya Williams, Valencia White, Austin Lai</h4>
+		<h6> Assisted By:</h6>
+		<p> Asha Richardson, </p>
+	</div>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.min.js"></script>
+	<script src="DACAinteractive.js"></script>
+
+</body>
+
+</html>
